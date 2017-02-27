@@ -1,0 +1,21 @@
+        <% include ../page/header %>
+        <div class="ui comments">
+
+       <div class="comment">
+
+               <a class="avatar" href="/comment/<%= message.id %>">   
+               <img src="http://image.noelshack.com/fichiers/2016/24/1466366197-risitas11.png">
+               </a>      
+
+
+                        <div class="metadata">
+                        <div class="date">
+			<%= message.created_at.fromNow() %></%%>
+			</div></div>
+			<div class="content">
+                  <div class="test"><%= message.content %></div>
+                
+         </div>
+         </div>
+        </div>
+    <% include ../page/footer %>
